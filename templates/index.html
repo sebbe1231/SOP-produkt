@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timesaver</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"
+        integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk"
+        crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <div class="border-end mx-2">
+                <a class="navbar-brand">TimeSaver</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-link active mx-2" aria-current="page" href="/">Hjem</a>
+                    <a class="nav-link mx-2" href="/projects">Dine projekter</a>
+                    <a class="nav-link mx-2" href="/chats">Dine sammentaler</a>
+                    <a class="nav-link mx-2" href="/calander">Din kaldender</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="container mt-4">
+        <h1 class="text-center">Velkommen Peter</h1>
+        <div class="d-flex flex-row justify-content-between">
+            <div>
+                <h5 class="text-center">Projekter</h5>
+                <div id="projects" class="border" style="max-height: 100vh;">
+                    <div class="list-group" style="max-width: 30vh; width: 30vh;">
+                        <a href="#" class="list-group-item list-group-item-action">
+                            <div class="d-flex w-100 justify-content-between">
+                                <h5 class="mb-1">Psykologi</h5>
+                            </div>
+                            <small>Simon, Simone, Anders og Peter</small>
+                        </a>
+                        <a href="#" class="list-group-item list-group-item-action">
+                            <div class="d-flex w-100 justify-content-between">
+                                <h5 class="mb-1">Social media app gruppe</h5>
+                            </div>
+                            <small class="text-muted">Peter, Jøren, Lasse</small>
+                        </a>
+                        <a href="#" class="list-group-item list-group-item-action">
+                            <div class="d-flex w-100 justify-content-between">
+                                <h5 class="mb-1">Teknologi gruppe</h5>
+                            </div>
+                            <small class="text-muted">Lars, Betina, Peter</small>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <h5 class="text-center">Opkommende aftaler</h5>
+                <div id="upcoming-events" class="border" style="max-height: 100vh;">
+                    <div class="list-group" style="max-width: 30vh; width: 30vh;">
+                        <a href="#" class="list-group-item list-group-item-action">
+                            <div class="d-flex w-100 justify-content-between">
+                                <h5 class="mb-1">29/3/2021</h5>
+                            </div>
+                            <p class="mb-1">Færdiggør konkurent analyse</p>
+                            <small>projekt: Social media app gruppe</small>
+                        </a>
+                        <a href="#" class="list-group-item list-group-item-action">
+                            <div class="d-flex w-100 justify-content-between">
+                                <h5 class="mb-1">5/4/2021</h5>
+                            </div>
+                            <p class="mb-1">Lav spørgeskema</p>
+                            <small class="text-muted">Projekt: psykologi</small>
+                        </a>
+                        <a href="#" class="list-group-item list-group-item-action">
+                            <div class="d-flex w-100 justify-content-between">
+                                <h5 class="mb-1">21/4/2021</h5>
+                            </div>
+                            <p class="mb-1">Indsænd opgave</p>
+                            <small class="text-muted">Projekt: psykologi</small>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <h5 class="text-center">Sammentaler</h5>
+                <div id="chats" class="border" style="max-height: 100vh;">
+                    <div class="list-group" style="max-width: 30vh; width: 30vh;">
+                        <a href="#" class="list-group-item list-group-item-action">
+                            <div class="d-flex w-100 justify-content-between">
+                                <h5 class="mb-1">Jøren</h5>
+                                <small>2 timer siden</small>
+                                <span class="position-absolute top-0 start-100 translate-middle badge bg-primary rounded-pill">2</span>
+                            </div>
+                            <p class="mb-1">Hvordan går det med din del?</p>
+                        </a>
+                        <a href="#" class="list-group-item list-group-item-action">
+                            <div class="d-flex w-100 justify-content-between">
+                                <h5 class="mb-1">Social media app gruppe</h5>
+                                <small>7 timer siden</small>
+                                <span class="position-absolute top-0 start-100 translate-middle badge bg-primary rounded-pill">17</span>
+                            </div>
+                            <p class="mb-1">Sebastian: Jeg har lige brug for hjælp med del 3</p>
+                        </a>
+                        <a href="#" class="list-group-item list-group-item-action">
+                            <div class="d-flex w-100 justify-content-between">
+                                <h5 class="mb-1">Guttene</h5>
+                                <small>2 dage siden</small>
+                                <span class="position-absolute top-0 start-100 translate-middle badge bg-primary rounded-pill">5</span>
+                            </div>
+                            <p class="mb-1">Karl: så har jeg sendt opgaven ind</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
